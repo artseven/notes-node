@@ -4,8 +4,22 @@ var addNote = (title, body) => {
     console.log('Adding note', title, body);
 };
 
-module.exports = {
-    addNote
+var getAll = () => {
+    console.log('Getting all notes');
 };
-//ES6 syntax allows to omit declaration addNote: addNote
+
+var readNote = (title, body) => {
+    console.log('Reading a note', title, body);
+};
+
+var removeNote = (title) => {
+    console.log('Removing note:', title);
+}
+module.exports = {
+    addNote,
+    getAll,
+    readNote,
+    removeNote
+};
+//ES6 syntax allows to omit declaration addNote: addNote if key and value are identical
 
