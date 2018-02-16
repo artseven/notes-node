@@ -9,7 +9,7 @@ var addNote = (title, body) => {
         body
     };
     try {
-        var notesString = fs.readFileSync('notes-data.json')
+        var notesString = fs.readFileSync('notes-data.json');
         notes = JSON.parse(notesString);
     } catch(e) {
 
@@ -34,7 +34,8 @@ var readNote = (title, body) => {
 
 var removeNote = (title) => {
     console.log('Removing note:', title);
-}
+};
+
 module.exports = {
     addNote,
     getAll,
